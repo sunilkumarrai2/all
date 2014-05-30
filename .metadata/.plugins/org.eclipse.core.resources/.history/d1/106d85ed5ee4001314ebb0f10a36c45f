@@ -1,0 +1,20 @@
+package com.sunil.restws;
+
+import java.awt.PageAttributes.MediaType;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+
+@Path("UserInfoService")
+public class UserInfo {
+
+	@GET
+	@Path("/name/{i}")
+	@Produces(MediaType.TEXT_XML)
+	public String userName(@PathParam("i") String i){
+		String name=i;
+		return "<User>"+"<Name>"+name+"</Name>"+"</User>";
+	}
+}

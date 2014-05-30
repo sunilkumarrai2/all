@@ -1,0 +1,35 @@
+package com.sunil.jersey.jaxb;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import com.sunil.jersey.jaxb.model.Todo;
+
+@Path("TodoResource")
+public class TodoResource {
+
+/*	@GET
+	@Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+	public Todo getXML(){
+		Todo todo=new Todo();
+		todo.setSummary("This is my first todo");
+		todo.setDescription("This is my first todo");
+		return todo;
+	}*/
+	
+	@GET
+	@Path("/todo/age/{j}")
+	@Produces({MediaType.TEXT_XML})
+	public String getHTML(@PathParam("j") int j){
+		/*Todo todo=new Todo();
+		todo.setSummary("This is my first todo");
+		todo.setDescription("This is my first todo");
+		return todo;*/
+		int age=j;
+		return "<User>" + "<Age>" + age + "</Age>" + "</User>";
+	}
+	
+}

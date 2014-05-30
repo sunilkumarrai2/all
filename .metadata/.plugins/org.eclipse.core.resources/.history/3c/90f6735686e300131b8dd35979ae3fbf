@@ -1,0 +1,23 @@
+package com.sunil.JAXB;
+
+import java.util.ArrayList;
+import javax.xml.bind.annotation.*;
+
+@XmlRootElement(namespace="com.sunil.JAX")
+public class Country {
+	@XmlElementWrapper(name = "Countries")
+	private String name;
+	private ArrayList<State> stateList;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public ArrayList<State> getStateList() {
+		return stateList;
+	}
+	public void setStateList(ArrayList<State> stateList) {
+		this.stateList = stateList;
+	}
+}

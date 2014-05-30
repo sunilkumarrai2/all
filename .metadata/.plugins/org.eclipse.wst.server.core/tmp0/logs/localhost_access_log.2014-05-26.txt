@@ -1,0 +1,11 @@
+127.0.0.1 - - [26/May/2014:14:58:42 -0700] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [26/May/2014:14:58:46 -0700] "GET /RESTfulWS/rest/name/sunil HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [26/May/2014:14:58:52 -0700] "GET /RESTfulWS/rest/name/sunil HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [26/May/2014:14:59:13 -0700] "GET /RESTfulWS/rest/name/sunil HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [26/May/2014:14:59:33 -0700] "GET /RESTfulWS/rest/name/sunil HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [26/May/2014:14:59:44 -0700] "GET /RESTfulWS/rest/name/sunil HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [26/May/2014:15:01:43 -0700] "GET /RESTfulWS/rest/UserInfoService/name/sunil HTTP/1.1" 200 42
+127.0.0.1 - - [26/May/2014:16:19:18 -0700] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [26/May/2014:16:19:35 -0700] "GET /RESTfulWS/rest/UserInfoService/name/sunil HTTP/1.1" 200 42
+0:0:0:0:0:0:0:1 - - [26/May/2014:16:20:11 -0700] "GET /sunil/rest/TodoResourceService/age/10 HTTP/1.1" 404 1025
+0:0:0:0:0:0:0:1 - - [26/May/2014:16:20:15 -0700] "GET /sunil/rest/TodoResourceService/age/10 HTTP/1.1" 404 1025

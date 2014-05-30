@@ -1,0 +1,5 @@
+package com.jaxb.model;
+
+public class BookMain {
+
+}

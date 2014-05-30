@@ -1,0 +1,20 @@
+package test;
+
+import java.util.ArrayList;
+
+import com.sunil.JAXB.*;
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Country>=new ArrayList<Country>();
+		
+		City c1=new City();
+		c1.setName("Gaya");c1.setZip("823001");
+		City c2=new City();
+		c2.setName("Patna");c2.setZip("82000");
+		
+
+	}
+
+}
